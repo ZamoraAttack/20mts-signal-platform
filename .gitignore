@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+schwab_tokens.json
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+node_modules/
+.next/
+
+# Real/paid market data (Databento) and generated CSVs — not ours to redistribute.
+# The generator script (scripts/generate_sample_replay.py) is kept so the repo
+# is still runnable end-to-end with synthetic data.
+backend/data/*.csv
+
+# Leftover browser automation profile — not project content
+scratch/
+
+# OS
+.DS_Store
+Thumbs.db
